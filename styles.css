@@ -67,9 +67,10 @@ ul {
 }
 
 /*VARICES*/
-.varices-container h2{
-    font-size: 40px;
+.varices-container{
+    display: none;
 }
+
 .varices {
     display: flex;
     padding: 10px;
@@ -77,17 +78,13 @@ ul {
 
 .varices img {
     width: 400px;
-    height: 400px;
-}
-
-.varices h2{
-    font-size: 40px;
+    height: 300px;
 }
 
 .varices p{
     background-color: rgba(0, 39, 109, 0.2); 
     padding: 30px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /*SHOWCASE*/
@@ -162,7 +159,7 @@ hr{
 /* CARDS BANNER ONE */
 .cards-brands {
     display: grid;
-    grid-template-columns: repeat(4, 1fr );
+    grid-template-columns: repeat(6, 1fr );
     gap: 25px;
     margin: 10px 0px;
 }
