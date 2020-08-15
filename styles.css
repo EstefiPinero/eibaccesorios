@@ -67,18 +67,21 @@ ul {
 }
 
 /*VARICES*/
-
+.varices-container h2{
+    font-size: 40px;
+}
 .varices {
     display: flex;
-    padding: 100px;
+    padding: 10px;
 }
 
 .varices img {
-    width: 100%;
+    width: 400px;
+    height: 400px;
 }
 
 .varices h2{
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .varices p{
@@ -267,6 +270,11 @@ footer {
     .nav-main ul.nav-menu-right {
         margin-right: 30px;
         margin-bottom: 30px;
+    }
+
+    .varices {
+        flex-direction: column;
+        padding: 10px;
     }
 
     .cards-brands {
