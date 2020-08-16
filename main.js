@@ -1,18 +1,18 @@
 
-let menu = document.getElementById("menu");
+let navMenu = document.getElementsByClassName("nav-menu")[0];
+let menuBtn = document.getElementById("menu-btn")
 
-let navMenu = document.getElementById("nav-menu");
+menuBtn.addEventListener("click",showhideMenu)
 
-let menuBtn = document.getElementById("menu-btn");addEventListener("click",() =>{
+function showhideMenu() {
     
-    if(navMenu.style.display = "none") {
-        navMenu.style.display = "block"
+    if(navMenu.style.display == "") {
+        navMenu.style.display = "flex"
     } 
-    else if  (navMenu.style.display == "none") {
-        alert("hi")
-        navMenu.style.display = "block"
+    else if  (navMenu.style.display == "flex") {
+        navMenu.style.display = ""
     }
-})
+}
 
 ScrollReveal().reveal('.showcase');
 ScrollReveal().reveal('.news-cards', { delay: 500});
