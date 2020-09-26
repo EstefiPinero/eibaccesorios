@@ -4,6 +4,7 @@ let menuBtn = document.getElementById("menu-btn")
 
 menuBtn.addEventListener("click",showhideMenu)
 
+//BOTON RESPONSIVE
 function showhideMenu() {
     
     if(navMenu.style.display == "") {
@@ -22,18 +23,22 @@ ScrollReveal().reveal('.cards-brands', { delay: 500});
 
 let container = document.getElementsByClassName('container')
 
-
 // MOSTRAR CONTAINER2-SECCION NOSOTROS//
 
 let container2   = document.getElementsByClassName('container2')
 
 
-
-
-//MOSTRAR SECCION VARICES//
+//BUTTOM VARICES//
 
 let btnVarices = document.getElementById('btnVarices');
+//portada
+let showcase = document.getElementById('showcase');
+//varices
 let varicesContainer = document.getElementById('varicesContainer');
+//productos
+let newsCards = document.getElementById('news-cards');
+//marcas
+let cardsBrands = document.getElementById('cards-brands');
 
 btnVarices.addEventListener('click', showHide);
 
@@ -41,9 +46,18 @@ function showHide (){
 
     if(varicesContainer.style.display == "") {
         varicesContainer.style.display = "flex";
+        newsCards.style.display = "none";
+        cardsBrands.style.display = "none";
 
     }else if(varicesContainer.style.display == "flex"){
         varicesContainer.style.display = "";
+        newsCards.style.display = "grid";
+        cardsBrands.style.display = "grid";
     }
   }
+
+
+
+//BUTTOM NOSOTROS
+
 

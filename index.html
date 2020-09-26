@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eib accesorios</title>
+    <!-- glider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="/styles.css">
     <!-- font oswald -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- whatsapp -->
     <a href="https://api.whatsapp.com/send?phone=5493512000947&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20%20." class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
@@ -43,11 +46,11 @@
 
         </nav>
         <hr>
-
+        
 
         <!-- SHOWCASE -->
-        <header class="showcase">
-            <h2>Nuestro Lugar para acompañar su salud</h2>
+        <header class="showcase animate__animated animate__fadeIn" id="showcase">
+            <h2>Nuestro Lugar para acompañar su salud </h2>
             <a class="btn" href="#">Ver mas <i class="fas fa-angle-double-right"></i></a>
         </header>
 
@@ -65,36 +68,35 @@
         </div>
 
         <!-- NEW CARDS -->
-        <div class="news-cards">
+        <div class="news-cards" id="news-cards">
             <div>
                 <img src="./images/img1.jpg" alt="">
-                <h3>Medias Mujer</h3>
+                <h3 class="">Medias Mujer</h3>
                 <p></p>
                 <a href="#">Ver mas <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="./images/img2.jpg" alt="">
-                <h3>Medias Hombre</h3>
+                <h3 class="">Medias Hombre</h3>
                 <p></p>
                 <a href="#">Ver mas <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="./images/img3.jpg" alt="">
-                <h3>Viajeros</h3>
+                <h3 class="">Viajeros</h3>
                 <p></p>
                 <a href="#">Ver mas <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="./images/img4.jpg" alt="">
-                <h3>Deportivas</h3>
+                <h3 class="">Deportivas</h3>
                 <p></p>
                 <a href="#">Ver mas <i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
         <hr>
-         
         <!-- MARCAS -->
-        <div class="cards-brands">
+        <div class="cards-brands" id="cards-brands">
             <div class="content">
                 <img src="/images/logos/ibici-fondo-rojo.png" alt="">
             </div>
@@ -116,16 +118,66 @@
             </div>
 
             <div class="content">
-                <img src="/images/logos/sigvaris.png" alt="">
+                <img src="/images/logos/sigvaris.png"  alt="">
             </div>
             
         </div>
+
+        <!--MAPA Y FORMULARIO-->
+        <div class="container2">
+            <div class="contentMap">
+                <h1>Como Ubicarnos</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.028999701538!2d-64.18245668485196!3d-31.413327081405182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a29da71a85c7%3A0x41c28958b5c92270!2sLima%20182%2C%20X5000%20ERD%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1600552001836!5m2!1ses-419!2sar" frameborder=""  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="content">
+                <h1 class="logo">Envie su <span> consulta</span> </h1>
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <form action="mailto:eib.at@hotmail.com" method="post" enctype="text/plain">
+                            <p>
+                                <label for="nombreCompleto"> Nombre Completo</label>
+                                <input type="text" name="nombreCompleto" id="nombreCompleto">
+                            </p>
+
+                            <p>
+                                <label for=""> email</label>
+                                <input type="email" name="email">
+                            </p>
+
+                            <p>
+                                <label for=""> telefono</label>
+                                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                            </p>
+
+                            <p class="block">
+                                <label for="">Asunto</label>
+                                <textarea name="message" rows="3"></textarea>
+                            </p>
+
+                            <p class="block">
+                                <button type="Send">
+                                    Enviar
+                                </button>
+                            </p>
+
+
+                        </form>
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+        </div>
+
+
 
         <!-- SOCIAL -->
         <section class="social">
             <p>Contactanos
                 <div class="links">
-                    <a href="#">
+                    <a href="https://www.facebook.com/eib.at" target='_blank'>
                         <i class="fab fa-facebook-f"></i>
                     </a>
                     <a href="#">
@@ -134,10 +186,6 @@
                 </div>
             </p>
         </section>
-    </div>
-
-    <div class="container2">
-
     </div>
 
     <!-- FOOTER -->
@@ -153,5 +201,10 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- custom js -->
     <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <!-- glider -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	
 </body>
 </html>
