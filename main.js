@@ -46,12 +46,12 @@ function showHide (){
 
     if(varicesContainer.style.display == "") {
         varicesContainer.style.display = "flex";
-        newsCards.style.display = "none";
+       //newsCards.style.display = "none";
         cardsBrands.style.display = "none";
 
     }else if(varicesContainer.style.display == "flex"){
         varicesContainer.style.display = "";
-        newsCards.style.display = "grid";
+        //newsCards.style.display = "grid";
         cardsBrands.style.display = "grid";
     }
   }
