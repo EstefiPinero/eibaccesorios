@@ -37,6 +37,7 @@ ul {
 
 .nav-brand {
     width: 200px;
+    margin-top: 5px;
 }
 
 /*////////NAV LEFT////////*/
@@ -100,7 +101,7 @@ hr{
 .showcase {
     width: 100%;
     height: 550px;
-    background: url('./images/bed-bedroom-blanket-comfort-545015.jpg') no-repeat center center/cover;
+    background: url('./images/bed-bedroom-blanket-comfort-545015\ \(1\).jpg') no-repeat center center/cover;
     padding-bottom: 50px;
     margin-bottom: 20px;
     display: flex;
@@ -150,6 +151,7 @@ hr{
     width: 100%;
     height: 400px;
     filter: grayscale(80%);
+    border-radius: 10px 10px 10px 10px;
 }
 
 .news-cards h3 {
@@ -285,15 +287,15 @@ hr{
 
 /*///////////// footer////////////// */
 
-footer {
+.piePagina {
     background-color: #3F7FBF;
     opacity: 60%;
     width: 100%;
     height: 100px;
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: center;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     padding: 35px 0;
 }
 
@@ -344,6 +346,22 @@ footer {
         font-size: 20px;
     }
 
+    .news-cards img {
+        height: 290px;
+    }
+
+    .piePagina {
+       
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        padding: 35px 0;
+    }
+
 }
 
 /* /////////////////////MAX WIDTH 750 //////////////////////////*/
@@ -366,7 +384,7 @@ footer {
         top:0px;
         right: 0px;
         background: #3F7FBF;
-        height: 100%;
+        height: 50%;
         width: auto;
         opacity: .96;
         padding: 30px;
@@ -428,7 +446,7 @@ footer {
         height: 400px;
     }
     
-    footer {
+    .piePagina {
        
         width: 100%;
         height: 100%;
@@ -436,7 +454,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 1.3rem;
+        font-size: 2.3rem;
         padding: 35px 0;
     }
 
@@ -475,18 +493,15 @@ footer {
 }
 
 
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	body {
 		padding: 40px 0;
 	}
-
 	.contenido-principal {
 		flex-direction: column;
 	}
-
 	.contenido-principal > * {
 		width: 100%;
 	}
-} */
-
+}
 

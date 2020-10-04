@@ -15,7 +15,7 @@ function showhideMenu() {
     }
 }
 
-ScrollReveal().reveal('.showcase');
+//ScrollReveal().reveal('.showcase');
 ScrollReveal().reveal('.news-cards', { delay: 500});
 ScrollReveal().reveal('.cards-brands', { delay: 500});
 
