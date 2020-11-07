@@ -73,22 +73,22 @@ ul {
   /* ////////////////////////////////////////////// */
 
 /*////////VARICES////////*/
-.varices-container{
+.varices-container, .nosotros-container{
     display: none;
 }
 
-.varices {
+.varices, .nosotros {
     display: flex;
     padding: 10px;
 }
 
-.varices img {
+.varices img, .nosotros img {
     width: 400px;
-    height: 300px;
+ 
 }
 
-.varices p{
-    background-color: rgba(0, 39, 109, 0.2); 
+.varices p, .nosotros p {
+
     padding: 30px;
     font-size: 25px;
 }
@@ -359,7 +359,7 @@ hr{
         justify-content: flex-end;
     }
 
-    .varices p {
+    .varices p, .nosotros p {
         font-size: 20px;
     }
 
@@ -429,16 +429,16 @@ hr{
         margin-bottom: 30px;
     }
 
-    .varices {
+    .varices, .nosotros {
         flex-direction: column;
         padding: 10px;
     }
 
-    .varices p {
-        font-size: 18px;
+    .varices p, .nosotros p {
+        font-size: 20px;
     }
 
-    .varices img{
+    .varices img, .nosotros img{
         width: 100%;
     }
 

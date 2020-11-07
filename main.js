@@ -47,8 +47,11 @@ let container2   = document.getElementsByClassName('container2')
 //BUTTOM VARICES//
 
 let btnVarices = document.getElementById('btnVarices');
+let btnNosotros = document.getElementById('btnNosotros')
 //portada
 let showcase = document.getElementById('showcase');
+//nosotros
+let nosotrosContainer = document.getElementById('nosotrosContainer')
 //varices
 let varicesContainer = document.getElementById('varicesContainer');
 //productos
@@ -72,7 +75,21 @@ function showHide (){
     }
   }
 
+btnNosotros.addEventListener('click', showHide2);
 
+  function showHide2 (){ 
+  
+      if(nosotrosContainer.style.display == "") {
+        nosotrosContainer.style.display = "flex";
+         //newsCards.style.display = "none";
+          cardsBrands.style.display = "none";
+  
+      }else if(nosotrosContainer.style.display == "flex"){
+        nosotrosContainer.style.display = "";
+          //newsCards.style.display = "grid";
+          cardsBrands.style.display = "grid";
+      }
+    }
 
 //BOTONES VER MAS
 
