@@ -75,6 +75,7 @@ function showHide (){
     }
   }
 
+
 btnNosotros.addEventListener('click', showHide2);
 
   function showHide2 (){ 

@@ -73,9 +73,7 @@ ul {
   /* ////////////////////////////////////////////// */
 
 /*////////VARICES////////*/
-.varices-container, .nosotros-container{
-    display: none;
-}
+
 
 .varices, .nosotros {
     display: flex;
