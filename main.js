@@ -68,7 +68,7 @@ function showHide (){
        //newsCards.style.display = "none";
         cardsBrands.style.display = "none";
 
-    }else if(varicesContainer.style.display == "flex"){
+    } else if(varicesContainer.style.display == "flex"){
         varicesContainer.style.display = "";
         //newsCards.style.display = "grid";
         cardsBrands.style.display = "grid";

@@ -68,7 +68,7 @@
             
             <div class="nosotros">
                 <img src="./images/local/168670_171456486234504_2884032_n.jpg" alt="">
-                <p> <strong>EIB ACCESORIOS </strong> <br> Luego de mas de 15 años trabajando en el asesoramiento y comercializacion de prendas retapeuticas, surge EIB, un nuevo espacio pensado para atender confortablemente las consultas y necesidades de nuestros clientes. <br><br> <strong>Nuestra filosofia</strong>  de trabajo se basa en el seguimiento personalizado, lo que nos ha posibilitado a traves del tiempo,recibir la recomendacion de profesionales de la salud que desde Cordoba y distintos puntos del interior del pais, nos confian sus pacientes. </p>
+                <p> <strong>EIB ACCESORIOS </strong> <br> Luego de mas de 15 años trabajando en el asesoramiento y comercializacion de prendas retapeuticas, surge EIB, un nuevo espacio pensado para atender confortablemente las consultas y necesidades de nuestros clientes. <br><br> <strong>Nuestra filosofia</strong>  de trabajo se basa en el seguimiento personalizado, lo que nos ha posibilitado a traves del tiempo,recibir la recomendacion de profesionales de la salud que desde Cordoba y distintos puntos del interior del pais, nos confian sus pacientes. <br><br> En nuestras instalaciones cuenta con la posibilidad de llevarse  </p>
             </div>
         </div>
 
@@ -152,7 +152,7 @@
                 <h1 class="logo">Envie su <span> consulta</span> </h1>
                 <div id="contact-wrapper" class="contact-wrapper">
                     <div class="contact-form">
-                        <form action="mailto:eib.at@hotmail.com" method="post" enctype="text/plain">
+                        <form name="contact" method="POST" data-netlify="true">
                             <p>
                                 <label for="nombreCompleto"> Nombre Completo</label>
                                 <input type="text" name="nombreCompleto" id="nombreCompleto">
@@ -172,7 +172,7 @@
                                 <label for="">Asunto</label>
                                 <textarea name="message" rows="3"></textarea>
                             </p>
-
+                            <div data-netlify-recaptcha="true"></div>
                             <p class="block">
                                 <button type="Send">
                                     Enviar
