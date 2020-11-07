@@ -19,6 +19,22 @@ function showhideMenu() {
 ScrollReveal().reveal('.news-cards', { delay: 500});
 ScrollReveal().reveal('.cards-brands', { delay: 500});
 
+//scroll suave
+const links = document.querySelectorAll(".nav-main ul a");
+
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+
+  document.querySelector(href).scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
 //OCULTAR CONTAINER 1//
 
 let container = document.getElementsByClassName('container')
@@ -58,6 +74,28 @@ function showHide (){
 
 
 
-//BUTTOM NOSOTROS
+//BOTONES VER MAS
+
+let mujer = document.getElementsByClassName('mujer')[0]
+let mujer2 = document.getElementsByClassName('mujer2')[0]
+let mujeres = document.getElementById('mujeres').addEventListener('click', () => {
+    
+    if(mujer.style.display == "") {
+        mujer.style.display = "block";
+        //mujer2.style.display = "block";
+    }else if(mujer.style.display == "block"){
+        mujer.style.display = "";
+        //mujer2.style.display = "";
+    }
+
+}) 
+
+
+
+
+let hombres = document.getElementById('hombres');
+let viajeros = document.getElementById('viajeros');
+let deportivas = document.getElementById('deportivas');
+
 
 
