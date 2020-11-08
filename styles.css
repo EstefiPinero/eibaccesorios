@@ -513,15 +513,17 @@ hr{
     height: 50px;
     bottom: 110px;
     right: 5px;
-    background-color: rgba(0,0,0,.4);
-    color: #FFF;
+    background-color: white;
+    color: black;
     border-bottom-left-radius: 5px;
     border-radius: 20px;
     text-align: center;
     font-size: 39px;
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
+    opacity: .6;
 }
+
 
 @media screen and (max-width: 800px) {
 	body {
